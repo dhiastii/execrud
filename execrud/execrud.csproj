@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D92B4F5E-B007-40F0-B2B6-C15E40F73188}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>execrud</RootNamespace>
+    <AssemblyName>execrud</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="database.cs" />
+    <Compile Include="execrudDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>execrudDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="execrudDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>execrudDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="execrudDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>execrudDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="execrudDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>execrudDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="execrudDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>execrudDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanAwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanAwal.Designer.cs">
+      <DependentUpon>HalamanAwal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Halaman2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Halaman2.Designer.cs">
+      <DependentUpon>Halaman2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanAdmin.Designer.cs">
+      <DependentUpon>HalamanAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanAnggota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanAnggota.Designer.cs">
+      <DependentUpon>HalamanAnggota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanBuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanBuku.Designer.cs">
+      <DependentUpon>HalamanBuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="HalamanAwal.resx">
+      <DependentUpon>HalamanAwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Halaman2.resx">
+      <DependentUpon>Halaman2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanAdmin.resx">
+      <DependentUpon>HalamanAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanAnggota.resx">
+      <DependentUpon>HalamanAnggota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanBuku.resx">
+      <DependentUpon>HalamanBuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="execrudDataSet.xsc">
+      <DependentUpon>execrudDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="execrudDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>execrudDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="execrudDataSet.xss">
+      <DependentUpon>execrudDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="execrudDataSet1.xsc">
+      <DependentUpon>execrudDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="execrudDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>execrudDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="execrudDataSet1.xss">
+      <DependentUpon>execrudDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="execrudDataSet2.xsc">
+      <DependentUpon>execrudDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="execrudDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>execrudDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="execrudDataSet2.xss">
+      <DependentUpon>execrudDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="execrudDataSet3.xsc">
+      <DependentUpon>execrudDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="execrudDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>execrudDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="execrudDataSet3.xss">
+      <DependentUpon>execrudDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="execrudDataSet4.xsc">
+      <DependentUpon>execrudDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="execrudDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>execrudDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="execrudDataSet4.xss">
+      <DependentUpon>execrudDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\APLIKASI READ BOOK.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
